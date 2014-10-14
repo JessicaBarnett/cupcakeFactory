@@ -1,0 +1,36 @@
+//landing section
+
+	#landing{
+		#logo{
+			width: 60%;
+			margin: 1rem;
+		}
+
+		address {
+			font-size: 1.25rem;
+			margin: 33vh 1rem 6vh 1rem;
+		}
+	}
+
+//giant cupcake
+	#giantCupcakeBG{
+		max-width: 100%;
+		background: url(../../images/bigCupcake2.png) 30% 0 / 150% fixed no-repeat;
+		background-position: center;
+	}
+
+
+@media screen and (min-width: 450px){
+	#landing{
+		#logo{
+			width: 30%;
+			margin: 2rem;
+		}
+		
+	}
+	#giantCupcakeBG{
+		background-size: 100%;
+		background-position: 30% 10%;
+		background-attachment: scroll;
+	}
+}

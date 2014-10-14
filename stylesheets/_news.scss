@@ -1,0 +1,41 @@
+//news section
+
+	#news{
+		padding-top: 6rem;
+		background-color: $pink;
+
+		.pageLogo{
+			margin-top: -6rem;
+		}
+
+		#headline, #headline ~ p{
+			padding: 1rem;
+		}
+
+		#headline{
+			margin-top: 1rem;
+			width: 100%;
+		}
+
+		.box p{
+			margin-bottom: .5rem;
+		}
+
+		.box{
+			transform: rotate(5deg);
+			width: 40%;
+			position: absolute;
+			margin-top: -97vh;
+			right: 3%;
+		}
+
+		#social{
+			width: 100%;
+			img {
+				width: 25%;
+				margin: 2%
+			}
+		}
+
+	}
+

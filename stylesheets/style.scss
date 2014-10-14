@@ -1,0 +1,156 @@
+//partials
+@import "colors";
+@import "landing";
+@import "selection";
+@import "ordering";
+@import "news";
+@import "visit";
+@import "about";
+@import "icing";
+
+//sass throws a hissyfit over a missed colon, but try to 
+//set a property that doesn't exist?  whatevs!  ?_?
+
+*{
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 100%;
+}
+
+.clear:after{
+	clear: both;
+	display: table;
+	content: " ";
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+li a {
+	display: block;
+	width: 100%;
+}
+
+.box{
+	background-color: $lightGray;
+	border: 4px solid $darkGray;
+	padding: .75rem;
+	margin: 1rem;
+	position: relative; //to position it on top of icing decoration
+	z-index: 30; //mid-level
+}
+
+.colorBox{
+	padding: 1rem;
+}
+
+//set min heights of all sections
+	#landing, #selection{
+		min-height: 100vh;
+	}
+
+	#about, #ordering, #news, #visit, #mobileNav{
+		padding-top: 4rem;
+		padding-bottom: 2rem; 
+		min-height: 100vh;
+	}
+
+	//for page logos
+	.pageLogo{
+		position: absolute;
+		width: 40%;
+		margin-top: -3rem;
+		padding: .5rem;
+		z-index: 30; //mid-level
+	}
+
+	.pageLogo:nth-child(even){
+		right: 0;
+	}
+
+
+//hide Web nav but show hamburger
+
+	#webNav{
+		position: fixed;
+		width: 100%;
+		text-align: right;
+	}
+	#webNav li {
+		display: none;
+	}
+
+	#hamburger {
+		//it was positioned relative, but I wasn't able to click 
+		//the burger at all points while scrolling down. 
+		position: absolute;
+		top: .5rem;
+		right: 2%;
+		z-index: 50; //highest level.  to position it over icing decorations
+
+		display: inline-block;
+		height: 3rem;
+		width: 3rem;
+		margin: .5rem .75rem;
+	}
+
+
+
+//show mobile nav
+
+	#mobileNav{
+		width: 100%;
+		background-color: $yellow;
+	}
+
+	#mobileNav ul{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#mobileNav li {
+		display: block;
+		width: 70%;
+		height: 3rem;
+		line-height: 3rem;
+		margin: .25rem auto;
+		text-align: center;
+		background-color: $lightBrown;
+		border-radius: 5px;
+	}
+
+	#mobileNav li:active{
+		background-color: $darkBrown;
+	}
+
+
+
+@media screen and (min-width: 450px){
+	.pageLogo{
+		width: 25%;
+	}
+}
+
+
+@media screen and (min-width: 800px){
+
+	#webNav li{
+		display: inline-block;
+	}
+
+	#mobileNav{
+		display: none;
+	}
+
+	#hamburger{
+		display: none;
+	}
+
+}

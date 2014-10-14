@@ -1,0 +1,61 @@
+//Icing Decorations pseudo-classes
+
+	section:after, #mobileNav:after {
+		max-width: 100%;
+		content: "";
+		display: block;
+		width: 100%;
+		height: 10rem;
+		margin-top: -2.5rem;
+		position: absolute; //to position element on top of other stuff
+		background: url(../../images/icing3short.svg) no-repeat;
+		background-size: cover;
+		background-position: center;
+		z-index: 10; //lowest level
+	}
+
+	section:nth-child(even):after{
+		margin-top: -3rem;
+		background-image: url(../../images/icing2short.svg);
+	}
+
+	#mobileNav:after {
+		background-image: url(../../images/icingBottom.svg);
+		margin-top: 3rem;
+		overflow: hidden;
+	}
+
+
+//Breakpoints: Where the icing images start to get clipped by the container
+
+@media screen and (min-width: 450px){
+	#selection:after{
+		display: none;
+	}
+
+	section:after, #mobileNav:after{
+		height: 15rem;
+	}
+}
+
+@media screen and (min-width: 800px){
+	section:after, #mobileNav:after{
+		background-image: url(../../images/icing3wide.svg);
+	}
+	section:nth-child(even):after{
+		background-image: url(../../images/icing2wide.svg);
+	}
+
+	//mobileNav has been hidden, so move bottom image to last section;
+	#visit:after{
+		background-image: url(../../images/icingBottom.svg);
+		background-size: 150%;
+	}
+}
+
+
+@media screen and (min-width: 1000px){
+	section:after, #mobileNav:after{
+		background-size: contain;
+	}
+}

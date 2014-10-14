@@ -1,0 +1,10 @@
+//About us section 
+	#about{
+		background-color: $yellow;
+
+		.box:first-of-type{
+			width: 60%;
+			transform: rotate(-8deg);
+		}
+	}
+
