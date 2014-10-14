@@ -1,24 +1,136 @@
-#landing #logo {
+* {
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  max-width: 100%; }
+
+.clear:after {
+  clear: both;
+  display: table;
+  content: " "; }
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  display: block; }
+
+#social img {
+  display: inline-block; }
+
+.box {
+  background-color: #edeced;
+  border: 4px solid #191914;
+  padding: .75rem;
+  margin: 1rem;
+  position: relative;
+  z-index: 30; }
+
+.colorBox {
+  padding: 1rem;
+  margin: 0 auto; }
+
+li a {
+  display: block;
+  width: 100%; }
+
+#landing, #selection {
+  min-height: 100vh; }
+
+#about, #ordering, #news, #visit, #mobileNav {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  min-height: 100vh; }
+
+.pageLogo {
+  position: absolute;
+  width: 40%;
+  margin-top: -3rem;
+  padding: .5rem;
+  z-index: 30; }
+
+.pageLogo:nth-child(even) {
+  right: 0; }
+
+@media screen and (min-width: 450px) {
+  .pageLogo {
+    width: 25%; } }
+#webNav {
+  position: fixed;
+  width: 100%;
+  text-align: right; }
+
+#webNav li {
+  display: none; }
+
+#hamburger {
+  position: absolute;
+  top: .5rem;
+  right: 2%;
+  z-index: 50;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  margin: .5rem .75rem; }
+
+#mobileNav {
+  width: 100%;
+  background-color: #f6f4d0; }
+
+#mobileNav ul {
+  width: 100%;
+  margin: 0 auto; }
+
+#mobileNav li {
+  display: block;
+  width: 70%;
+  height: 3rem;
+  line-height: 3rem;
+  margin: .25rem auto;
+  text-align: center;
+  background-color: #b48967;
+  border-radius: 5px; }
+
+#mobileNav li:active {
+  background-color: #4a160d; }
+
+@media screen and (min-width: 800px) {
+  #webNav li {
+    display: inline-block; }
+
+  #mobileNav {
+    display: none; }
+
+  #hamburger {
+    display: none; } }
+img#logo {
   width: 60%;
   margin: 1rem; }
+
 #landing address {
   font-size: 1.25rem;
   margin: 33vh 1rem 6vh 1rem; }
 
 #giantCupcakeBG {
   max-width: 100%;
-  background: url(../images/bigCupcake2.png) 30% 0/150% fixed no-repeat;
+  background: url(../../images/bigCupcake2.png) 30% 0/150% fixed no-repeat;
   background-position: center; }
 
 @media screen and (min-width: 450px) {
-  #landing #logo {
+  img#logo {
     width: 30%;
     margin: 2rem; }
 
   #giantCupcakeBG {
     background-size: 100%;
     background-position: 30% 10%;
-    background-attachment: scroll; } }
+    background-attachment: scroll; }
+
+  #landing:after {
+    display: none; } }
 #selection figure {
   width: 50%;
   max-height: 60vh;
@@ -40,13 +152,19 @@
 #selection div.description {
   display: none; }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 600px) {
   #selection figure {
     width: 20%;
-    max-height: 90vh;
+    max-height: 70vh;
+    min-height: 40%;
+    height: 50%;
     margin-left: 4%; }
+  #selection figure img {
+    height: 100%; }
   #selection figure:last-child {
-    margin-right: 4%; } }
+    margin-right: 4%; }
+  #selection div.description {
+    display: block; } }
 #ordering {
   background-color: #b7e3a3;
   padding-bottom: 2rem; }
@@ -97,17 +215,17 @@ section:after, #mobileNav:after {
   height: 10rem;
   margin-top: -2.5rem;
   position: absolute;
-  background: url(../images/icing3short.svg) no-repeat;
+  background: url(../../images/icing3short.svg) no-repeat;
   background-size: cover;
   background-position: center;
   z-index: 10; }
 
 section:nth-child(even):after {
   margin-top: -3rem;
-  background-image: url(../images/icing2short.svg); }
+  background-image: url(../../images/icing2short.svg); }
 
 #mobileNav:after {
-  background-image: url(../images/icingBottom.svg);
+  background-image: url(../../images/icingBottom.svg);
   margin-top: 3rem;
   overflow: hidden; }
 
@@ -119,116 +237,14 @@ section:nth-child(even):after {
     height: 15rem; } }
 @media screen and (min-width: 800px) {
   section:after, #mobileNav:after {
-    background-image: url(../images/icing3wide.svg); }
+    background-image: url(../../images/icing3wide.svg); }
 
   section:nth-child(even):after {
-    background-image: url(../images/icing2wide.svg); }
+    background-image: url(../../images/icing2wide.svg); }
 
   #visit:after {
-    background-image: url(../images/icingBottom.svg);
+    background-image: url(../../images/icingBottom.svg);
     background-size: 150%; } }
 @media screen and (min-width: 1000px) {
   section:after, #mobileNav:after {
     background-size: contain; } }
-* {
-  -o-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  max-width: 100%; }
-
-.clear:after {
-  clear: both;
-  display: table;
-  content: " "; }
-
-img {
-  max-width: 100%;
-  max-height: 100%; }
-
-li a {
-  display: block;
-  width: 100%; }
-
-.box {
-  background-color: #edeced;
-  border: 4px solid #191914;
-  padding: .75rem;
-  margin: 1rem;
-  position: relative;
-  z-index: 30; }
-
-.colorBox {
-  padding: 1rem; }
-
-#landing, #selection {
-  min-height: 100vh; }
-
-#about, #ordering, #news, #visit, #mobileNav {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  min-height: 100vh; }
-
-.pageLogo {
-  position: absolute;
-  width: 40%;
-  margin-top: -3rem;
-  padding: .5rem;
-  z-index: 30; }
-
-.pageLogo:nth-child(even) {
-  right: 0; }
-
-#webNav {
-  position: fixed;
-  width: 100%;
-  text-align: right; }
-
-#webNav li {
-  display: none; }
-
-#hamburger {
-  position: absolute;
-  top: .5rem;
-  right: 2%;
-  z-index: 50;
-  display: inline-block;
-  height: 3rem;
-  width: 3rem;
-  margin: .5rem .75rem; }
-
-#mobileNav {
-  width: 100%;
-  background-color: #f6f4d0; }
-
-#mobileNav ul {
-  width: 100%;
-  margin: 0 auto; }
-
-#mobileNav li {
-  display: block;
-  width: 70%;
-  height: 3rem;
-  line-height: 3rem;
-  margin: .25rem auto;
-  text-align: center;
-  background-color: #b48967;
-  border-radius: 5px; }
-
-#mobileNav li:active {
-  background-color: #4a160d; }
-
-@media screen and (min-width: 450px) {
-  .pageLogo {
-    width: 25%; } }
-@media screen and (min-width: 800px) {
-  #webNav li {
-    display: inline-block; }
-
-  #mobileNav {
-    display: none; }
-
-  #hamburger {
-    display: none; } }

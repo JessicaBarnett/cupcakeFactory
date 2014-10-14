@@ -6,3 +6,7 @@ $darkBrown: #4A160D;
 $lightGray: #EDECED;
 $darkGray: rgb(25, 25, 20);
 
+//breakpoints
+$smallScreen: "(min-width: 450px)";
+$mediumScreen: "(min-width: 600px)"; //formerly 450px
+$normalScreen: "(min-width: 1200px)";

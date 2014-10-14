@@ -1,10 +1,11 @@
 //landing section
 
+	img#logo{
+		width: 60%;
+		margin: 1rem;
+	}
+
 	#landing{
-		#logo{
-			width: 60%;
-			margin: 1rem;
-		}
 
 		address {
 			font-size: 1.25rem;
@@ -20,17 +21,20 @@
 	}
 
 
-@media screen and (min-width: 450px){
-	#landing{
-		#logo{
-			width: 30%;
-			margin: 2rem;
-		}
-		
+@media screen and #{$smallScreen}{
+
+	img#logo{
+		width: 30%;
+		margin: 2rem;
 	}
+		
 	#giantCupcakeBG{
 		background-size: 100%;
 		background-position: 30% 10%;
 		background-attachment: scroll;
+	}
+
+	#landing:after{
+		display: none;
 	}
 }

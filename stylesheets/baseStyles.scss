@@ -1,0 +1,83 @@
+*{
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 100%;
+}
+
+.clear:after{
+	clear: both;
+	display: table;
+	content: " ";
+}
+
+//image base styles
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+
+	margin: 0 auto;
+	display: block;
+}
+
+#social img{
+	display: inline-block;
+}
+
+//Box and Color Box
+
+.box{
+	background-color: $lightGray;
+	border: 4px solid $darkGray;
+	padding: .75rem;
+	margin: 1rem;
+	position: relative; //to position it on top of icing decoration
+	z-index: 30; //mid-level
+}
+
+.colorBox{
+	padding: 1rem;
+	margin: 0 auto;
+}
+
+
+li a {
+	display: block;
+	width: 100%;
+}
+
+
+//set min heights of all sections
+	#landing, #selection{
+		min-height: 100vh;
+	}
+
+	#about, #ordering, #news, #visit, #mobileNav{
+		padding-top: 4rem;
+		padding-bottom: 2rem; 
+		min-height: 100vh;
+	}
+
+	//for page logos
+	.pageLogo{
+		position: absolute;
+		width: 40%;
+		margin-top: -3rem;
+		padding: .5rem;
+		z-index: 30; //mid-level
+	}
+
+	.pageLogo:nth-child(even){
+		right: 0;
+	}
+
+@media screen and (min-width: 450px){
+	.pageLogo{
+		width: 25%;
+	}
+}

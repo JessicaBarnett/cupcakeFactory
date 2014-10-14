@@ -1,0 +1,72 @@
+
+//hide Web nav but show hamburger
+
+	#webNav{
+		position: fixed;
+		width: 100%;
+		text-align: right;
+	}
+	#webNav li {
+		display: none;
+	}
+
+	#hamburger {
+		//it was positioned relative, but I wasn't able to click 
+		//the burger at all points while scrolling down. 
+		position: absolute;
+		top: .5rem;
+		right: 2%;
+		z-index: 50; //highest level.  to position it over icing decorations
+
+		display: inline-block;
+		height: 3rem;
+		width: 3rem;
+		margin: .5rem .75rem;
+	}
+
+
+
+//show mobile nav
+
+	#mobileNav{
+		width: 100%;
+		background-color: $yellow;
+	}
+
+	#mobileNav ul{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#mobileNav li {
+		display: block;
+		width: 70%;
+		height: 3rem;
+		line-height: 3rem;
+		margin: .25rem auto;
+		text-align: center;
+		background-color: $lightBrown;
+		border-radius: 5px;
+	}
+
+	#mobileNav li:active{
+		background-color: $darkBrown;
+	}
+
+
+
+@media screen and (min-width: 800px){
+
+	#webNav li{
+		display: inline-block;
+	}
+
+	#mobileNav{
+		display: none;
+	}
+
+	#hamburger{
+		display: none;
+	}
+
+}
