@@ -2,39 +2,41 @@
 
 	img#logo{
 		width: 60%;
-		margin: 1rem;
+		padding: 1rem;
 	}
 
 	#landing{
 
 		address {
-			font-size: 1.25rem;
-			margin: 33vh 1rem 6vh 1rem;
+			margin: 30vh 1rem 6vh 1rem;
 		}
 	}
 
 //giant cupcake
 	#giantCupcakeBG{
 		max-width: 100%;
-		background: url(../../images/bigCupcake2.png) 30% 0 / 150% fixed no-repeat;
-		background-position: center;
+		background: url(../../images/bigCupcake2.png) 70% 0 / 150% scroll no-repeat;
 	}
 
 
-@media screen and #{$smallScreen}{
+@media screen and #{$mediumScreen}{
 
 	img#logo{
 		width: 30%;
 		margin: 2rem;
 	}
 		
+	#landing address{
+		margin-top: 15vh;
+	}
+
 	#giantCupcakeBG{
 		background-size: 100%;
-		background-position: 30% 10%;
-		background-attachment: scroll;
+		background-position: 30% 0;
+		background-attachment: fixed;
 	}
 
 	#landing:after{
-		display: none;
+		display: block;
 	}
 }

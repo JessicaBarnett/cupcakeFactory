@@ -5,6 +5,7 @@
 		figure{
 			width: 50%;
 			max-height: 60vh;
+			height: 100%;
 			overflow: hidden;
 			float: left;
 		}
@@ -14,18 +15,9 @@
 		}
 
 		figcaption{
-			font-size: 2rem;
-			position: absolute;
-			margin-top: -17rem;
-			margin-left: .5rem;
 			color: black;
-			padding: .25rem;
 			background-color: rgba(255, 255, 255, .75);
 			text-align: center;
-		}
-
-		figure:nth-of-type(-n+2) figcaption{ //selects 1st 2 figcaptions
-			margin-top: -4rem;
 		}
 
 		div.description{
@@ -34,7 +26,22 @@
 
 	}
 
+//description and captions - medium screen
 @media screen and #{$mediumScreen}{
+
+	div.description{
+		display: block;
+	}	
+
+	figcaption{
+		position: relative;
+		top: -30vh;
+	}
+
+}
+
+
+@media screen and #{$mediumScreen}, screen and #{$landscape}{
 
 	#selection{	
 
@@ -46,25 +53,8 @@
 			margin-left: 4%;
 		}
 
-		figure img {
-			height: 100%;
-		}
-
-		figure:last-child{
-			margin-right: 4%;
-		}
-
-		div.description{
-			display: block;
-		}
-	}
+ 	}
 
 
 
 }
-
-// @media screen and (min-width: )
-
-// 		div.description{
-// 			display: none;
-// 		}

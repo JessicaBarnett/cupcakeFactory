@@ -1,3 +1,33 @@
+body {
+  font-size: 1.3rem;
+  font-family: "Vollkorn", serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Signika", sans-serif;
+  font-size: 1.95rem; }
+
+@media screen and (min-width: 700px) {
+  body {
+    font-size: 1.95rem; }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 2.6rem; } }
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.3rem; }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.95rem; } }
+a, a:visited {
+  text-decoration: none;
+  color: black; }
+
+a:hover, a:active {
+  color: gray; }
+
+nav li {
+  margin: 1%; }
+
 * {
   -o-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5,7 +35,8 @@
   box-sizing: border-box; }
 
 body {
-  max-width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .clear:after {
   clear: both;
@@ -14,7 +45,9 @@ body {
 
 img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: 100%; }
+
+figure img {
   margin: 0 auto;
   display: block; }
 
@@ -25,9 +58,7 @@ img {
   background-color: #edeced;
   border: 4px solid #191914;
   padding: .75rem;
-  margin: 1rem;
-  position: relative;
-  z-index: 30; }
+  margin: 1rem; }
 
 .colorBox {
   padding: 1rem;
@@ -41,8 +72,7 @@ li a {
   min-height: 100vh; }
 
 #about, #ordering, #news, #visit, #mobileNav {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding: 7rem 0;
   min-height: 100vh; }
 
 .pageLogo {
@@ -61,7 +91,8 @@ li a {
 #webNav {
   position: fixed;
   width: 100%;
-  text-align: right; }
+  text-align: right;
+  z-index: 300; }
 
 #webNav li {
   display: none; }
@@ -70,8 +101,7 @@ li a {
   position: absolute;
   top: .5rem;
   right: 2%;
-  z-index: 50;
-  display: inline-block;
+  z-index: 500;
   height: 3rem;
   width: 3rem;
   margin: .5rem .75rem; }
@@ -97,82 +127,94 @@ li a {
 #mobileNav li:active {
   background-color: #4a160d; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   #webNav li {
     display: inline-block; }
 
   #mobileNav {
-    display: none; }
+    display: none;
+    position: fixed; }
 
   #hamburger {
     display: none; } }
 img#logo {
   width: 60%;
-  margin: 1rem; }
+  padding: 1rem; }
 
 #landing address {
-  font-size: 1.25rem;
-  margin: 33vh 1rem 6vh 1rem; }
+  margin: 30vh 1rem 6vh 1rem; }
 
 #giantCupcakeBG {
   max-width: 100%;
-  background: url(../../images/bigCupcake2.png) 30% 0/150% fixed no-repeat;
-  background-position: center; }
+  background: url(../../images/bigCupcake2.png) 70% 0/150% scroll no-repeat; }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 700px) {
   img#logo {
     width: 30%;
     margin: 2rem; }
 
+  #landing address {
+    margin-top: 15vh; }
+
   #giantCupcakeBG {
     background-size: 100%;
-    background-position: 30% 10%;
-    background-attachment: scroll; }
+    background-position: 30% 0;
+    background-attachment: fixed; }
 
   #landing:after {
-    display: none; } }
+    display: block; } }
 #selection figure {
   width: 50%;
   max-height: 60vh;
+  height: 100%;
   overflow: hidden;
   float: left; }
 #selection figure img {
   width: 150%; }
 #selection figcaption {
-  font-size: 2rem;
-  position: absolute;
-  margin-top: -17rem;
-  margin-left: .5rem;
   color: black;
-  padding: .25rem;
   background-color: rgba(255, 255, 255, 0.75);
   text-align: center; }
-#selection figure:nth-of-type(-n+2) figcaption {
-  margin-top: -4rem; }
 #selection div.description {
   display: none; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
+  div.description {
+    display: block; }
+
+  figcaption {
+    position: relative;
+    top: -30vh; } }
+@media screen and (min-width: 700px), screen and (orientation: landscape) {
   #selection figure {
     width: 20%;
     max-height: 70vh;
     min-height: 40%;
     height: 50%;
-    margin-left: 4%; }
-  #selection figure img {
-    height: 100%; }
-  #selection figure:last-child {
-    margin-right: 4%; }
-  #selection div.description {
-    display: block; } }
+    margin-left: 4%; } }
 #ordering {
   background-color: #b7e3a3;
-  padding-bottom: 2rem; }
+  padding-top: 4rem; }
   #ordering figure img {
     width: 100%; }
 
+@media screen and (min-width: 700px) {
+  #ordering figure img {
+    width: 50%;
+    margin-right: 5%; }
+  #ordering .pageLogo {
+    margin-top: 45vh; }
+  #ordering .box {
+    width: 40%;
+    position: absolute;
+    transform: rotate(-10deg);
+    margin-top: -85vh; }
+  #ordering .colorBox {
+    background-color: #f6f4d0;
+    margin-right: 5%;
+    margin-top: 10vh;
+    width: 70%; } }
 #news {
-  padding-top: 6rem;
   background-color: #f69fcc; }
   #news .pageLogo {
     margin-top: -6rem; }
@@ -188,54 +230,82 @@ img#logo {
     width: 40%;
     position: absolute;
     margin-top: -97vh;
-    right: 3%; }
+    margin-left: 65%; }
   #news #social {
     width: 100%; }
     #news #social img {
       width: 25%;
       margin: 2%; }
 
+@media screen and (min-width: 700px) {
+  #news .colorBox {
+    background-color: #f6f4d0;
+    padding: 2rem;
+    width: 70%;
+    margin-right: 5%; }
+  #news .box {
+    transform: rotate(-5deg);
+    width: 30%;
+    position: absolute;
+    margin-top: -60vh;
+    margin-left: 3%; } }
 #visit {
   background-color: #b7e3a3; }
   #visit ul {
     width: 50%;
     margin: 1rem auto; }
 
+@media screen and (min-width: 700px) {
+  #visit .pageLogo {
+    margin-top: -5rem; }
+  #visit figure {
+    float: left;
+    width: 40%;
+    margin-top: -10rem;
+    margin-left: 10%;
+    padding-top: 10rem; }
+  #visit .box {
+    transform: rotate(-5deg);
+    width: 40%; }
+  #visit .colorBox {
+    float: left;
+    width: 40%;
+    margin: 0 auto; } }
 #about {
   background-color: #f6f4d0; }
   #about .box:first-of-type {
     width: 60%;
     transform: rotate(-8deg); }
 
+@media screen and (min-width: 700px) {
+  #about .box:last-of-type {
+    padding: 1.5rem;
+    width: 80%;
+    margin: 2rem auto; } }
 section:after, #mobileNav:after {
   max-width: 100%;
   content: "";
   display: block;
   width: 100%;
   height: 10rem;
-  margin-top: -2.5rem;
   position: absolute;
   background: url(../../images/icing3short.svg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  z-index: 10; }
+  background-position: left;
+  z-index: 0;
+  display: block;
+  background-size: 100%;
+  background-clip: none; }
 
 section:nth-child(even):after {
-  margin-top: -3rem;
   background-image: url(../../images/icing2short.svg); }
 
 #mobileNav:after {
-  background-image: url(../../images/icingBottom.svg);
-  margin-top: 3rem;
-  overflow: hidden; }
+  background-image: url(../../images/icingBottom.svg); }
 
-@media screen and (min-width: 450px) {
-  #selection:after {
-    display: none; }
-
-  section:after, #mobileNav:after {
-    height: 15rem; } }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
+  section#landing:after {
+    display: none; } }
+@media screen and (min-width: 700px) {
   section:after, #mobileNav:after {
     background-image: url(../../images/icing3wide.svg); }
 
@@ -245,6 +315,3 @@ section:nth-child(even):after {
   #visit:after {
     background-image: url(../../images/icingBottom.svg);
     background-size: 150%; } }
-@media screen and (min-width: 1000px) {
-  section:after, #mobileNav:after {
-    background-size: contain; } }

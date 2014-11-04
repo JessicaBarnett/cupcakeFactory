@@ -9,3 +9,34 @@
 		}
 
 	}
+
+
+@media screen and #{$mediumScreen}{
+
+	#visit{
+		.pageLogo{
+			margin-top: -5rem;
+		}
+
+		figure{
+			float: left;
+			width: 40%;
+			margin-top: -10rem;
+			margin-left: 10%;
+			padding-top: 10rem;
+		}
+		.box{
+			transform: rotate(-5deg);
+			width: 40%;
+		}
+		.colorBox{
+			float: left;
+			width: 40%;
+			margin: 0 auto;
+		}
+
+
+	}
+
+
+}

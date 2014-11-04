@@ -2,7 +2,7 @@
 
 	#ordering{
 		background-color: $green;
-		padding-bottom: 2rem;
+		padding-top: 4rem;
 
 		figure img{
 			width: 100%;
@@ -10,8 +10,29 @@
 
 	}
 
-@media screen and (min-width: 450px){
+@media screen and #{$mediumScreen}{
 	#ordering{
-		
+		figure img{
+			width: 50%;
+			margin-right: 5%;
+		}
+
+		.pageLogo{
+			margin-top: 45vh;
+		}
+
+		.box{
+			width: 40%;
+			position: absolute;
+			transform: rotate(-10deg);
+			margin-top: -85vh;
+		}
+
+		.colorBox{
+			background-color: $yellow;
+			margin-right: 5%;
+			margin-top: 10vh;
+			width: 70%;
+		}
 	}
 }

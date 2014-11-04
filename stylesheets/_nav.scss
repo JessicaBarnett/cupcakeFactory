@@ -5,6 +5,7 @@
 		position: fixed;
 		width: 100%;
 		text-align: right;
+		z-index: 300;
 	}
 	#webNav li {
 		display: none;
@@ -16,9 +17,8 @@
 		position: absolute;
 		top: .5rem;
 		right: 2%;
-		z-index: 50; //highest level.  to position it over icing decorations
+		z-index: 500; //highest level.  to position it over icing decorations
 
-		display: inline-block;
 		height: 3rem;
 		width: 3rem;
 		margin: .5rem .75rem;
@@ -55,7 +55,7 @@
 
 
 
-@media screen and (min-width: 800px){
+@media screen and #{$mediumScreen}{
 
 	#webNav li{
 		display: inline-block;
@@ -63,6 +63,7 @@
 
 	#mobileNav{
 		display: none;
+		position: fixed;
 	}
 
 	#hamburger{

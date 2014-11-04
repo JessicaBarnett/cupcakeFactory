@@ -1,3 +1,4 @@
+//colors
 $yellow: #F6F4D0;
 $green: #B7E3A3;
 $pink: #F69FCC;
@@ -7,6 +8,13 @@ $lightGray: #EDECED;
 $darkGray: rgb(25, 25, 20);
 
 //breakpoints
-$smallScreen: "(min-width: 450px)";
-$mediumScreen: "(min-width: 600px)"; //formerly 450px
-$normalScreen: "(min-width: 1200px)";
+$smallScreen: "(min-width: 450px)"; 
+$mediumScreen: "(min-width: 700px)"; 
+$webScreen: "(min-width: 1200px)";
+$landscape: "(orientation: landscape)";
+
+//for testing
+$icingHide: "block";  //block or none.  Change this to temporarity hide icing elements
+$icingSize: "100%"; //contain, cover, fit, percentage
+$icingClip: "none";
+
