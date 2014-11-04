@@ -146,7 +146,7 @@ img#logo {
 
 #giantCupcakeBG {
   max-width: 100%;
-  background: url(../../images/bigCupcake2.png) 70% 0/150% scroll no-repeat; }
+  background: url(../images/bigCupcake2.png) 70% 0/150% scroll no-repeat; }
 
 @media screen and (min-width: 700px) {
   img#logo {
