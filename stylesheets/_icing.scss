@@ -7,7 +7,7 @@
 		width: 100%;
 		height: 10rem;
 		position: absolute; //to position element on top of other stuff
-		background: url(../../images/icing3short.svg) no-repeat;
+		background: url(../images/icing/icing3short.svg) no-repeat;
 		background-position: left;
 		z-index: 0; //lowest level
 		
@@ -17,11 +17,11 @@
 	}
 
 	section:nth-child(even):after{
-		background-image: url(../../images/icing2short.svg);
+		background-image: url(../images/icing/icing2short.svg);
 	}
 
 	#mobileNav:after {
-		background-image: url(../../images/icingBottom.svg);
+		background-image: url(../images/icing/icingBottom.svg);
 		// overflow: hidden;
 	}
 
