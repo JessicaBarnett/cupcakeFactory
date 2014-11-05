@@ -307,11 +307,11 @@ section:nth-child(even):after {
     display: none; } }
 @media screen and (min-width: 700px) {
   section:after, #mobileNav:after {
-    background-image: url(../images/icing3wide.svg); }
+    background-image: url(../images/icing/icing3wide.svg); }
 
   section:nth-child(even):after {
-    background-image: url(../images/icing2wide.svg); }
+    background-image: url(../images/icing/icing2wide.svg); }
 
   #visit:after {
-    background-image: url(../images/icingBottom.svg);
+    background-image: url(../images/icing/icingBottom.svg);
     background-size: 150%; } }

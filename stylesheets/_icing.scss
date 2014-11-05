@@ -41,15 +41,15 @@
 
 @media screen and #{$mediumScreen}{
 	section:after, #mobileNav:after{
-		background-image: url(../images/icing3wide.svg);
+		background-image: url(../images/icing/icing3wide.svg);
 	}
 	section:nth-child(even):after{
-		background-image: url(../images/icing2wide.svg);
+		background-image: url(../images/icing/icing2wide.svg);
 	}
 
 	//mobileNav has been hidden, so move bottom image to visit section instead of mobilenav 
 	#visit:after{
-		background-image: url(../images/icingBottom.svg);
+		background-image: url(../images/icing/icingBottom.svg);
 		background-size: 150%;
 	}
 }
