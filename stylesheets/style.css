@@ -287,13 +287,13 @@ section:after, #mobileNav:after {
   content: "";
   display: block;
   width: 100%;
-  height: 10rem;
-  position: absolute;
+  height: 20rem;
+  position: relative;
   background: url(../images/icing/icing3short.svg) no-repeat;
   background-position: left;
   z-index: 0;
   display: block;
-  background-size: 100%;
+  background-size: cover;
   background-clip: none; }
 
 section:nth-child(even):after {
