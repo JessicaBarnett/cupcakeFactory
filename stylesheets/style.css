@@ -1,23 +1,23 @@
 body {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-family: "Vollkorn", serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Signika", sans-serif;
-  font-size: 1.95rem; }
+  font-size: 1.5rem; }
 
 @media screen and (min-width: 700px) {
   body {
-    font-size: 1.95rem; }
+    font-size: 1.5rem; }
 
   h1, h2, h3, h4, h5, h6 {
-    font-size: 2.6rem; } }
+    font-size: 2rem; } }
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 1.3rem; }
+    font-size: 1rem; }
 
   h1, h2, h3, h4, h5, h6 {
-    font-size: 1.95rem; } }
+    font-size: 1.5rem; } }
 a, a:visited {
   text-decoration: none;
   color: black; }
@@ -229,8 +229,8 @@ img#logo {
     transform: rotate(5deg);
     width: 40%;
     position: absolute;
-    margin-top: -97vh;
-    margin-left: 65%; }
+    margin-top: -110vh;
+    margin-left: 55%; }
   #news #social {
     width: 100%; }
     #news #social img {
@@ -287,13 +287,13 @@ section:after, #mobileNav:after {
   content: "";
   display: block;
   width: 100%;
-  height: 20rem;
+  height: 10rem;
   position: relative;
   background: url(../images/icing/icing3short.svg) no-repeat;
   background-position: left;
   z-index: 0;
   display: block;
-  background-size: cover;
+  background-size: 100%;
   background-clip: none; }
 
 section:nth-child(even):after {
